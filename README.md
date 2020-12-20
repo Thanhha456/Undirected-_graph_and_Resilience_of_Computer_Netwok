@@ -1,10 +1,14 @@
+Project for assessment in "Algorithmic Thinking (Part 1)" course at Rice university.  
+https://www.coursera.org/learn/algorithmic-thinking-1  
+
 #**Assessment: Undirect Graph, Connected Components and Resilience of Computer Networks**  
     
 Write Python code that implements breadth-first search. Then, you will use this function to compute the set of connected components (CCs) of an undirected graph as well as determine the size of its largest connected component. You will write a function that computes the resilience of a graph (measured by the size of its largest connected component) as a sequence of nodes are deleted from the graph. Then we will analyze the connectivity of a computer network as it undergoes a cyber-attack. In particular, we will simulate an attack on this network in which an increasing number of servers are disabled. In computational terms, we will model the network by an undirected graph and repeatedly delete nodes from this graph. We will then measure the resilience of the graph in terms of the size of the largest remaining connected component as a function of the number of nodes deleted.  
 - Computer network : load the file as an undirected graph (with 1239 nodes and 3047 edges)
   http://storage.googleapis.com/codeskulptor-alg/alg_rf7.txt
 - ER graphs
-- UPA graphs  
+- UPA graphs    
+
 First,examine the resilience of the computer network under an attack in which servers are chosen at random. We will then compare the resilience of the network to the resilience of ER and UPA graphs of similar size. Once you have computed the resilience for all three graphs, plot the results as three curves combined in a single standard plot (not log/log). Use a line plot for each curve. The horizontal axis for your single plot be the the number of nodes removed (ranging from zero to the number of nodes in the graph) while the vertical axis should be the size of the largest connect component in the graphs resulting from the node removal.
 We will say that a graph is resilient under this type of attack if the size of its largest connected component is roughly (within ~25%) equal to the number of nodes remaining, after the removal of each node during the attack. Which of the three graphs are resilient under random attacks as the first 20% of their nodes are removed?    
 
